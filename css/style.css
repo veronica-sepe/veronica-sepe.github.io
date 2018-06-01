@@ -79,6 +79,7 @@
         /* transition: background-color 5s; */
         /* transition: all 4s ease-in-out; */
         transition: all 2s ease-in-out;
+        width: 200px;
     }
     
     .bottone_large {
@@ -93,4 +94,13 @@
         color: rgb(226, 43, 43);
         cursor: pointer;
         width: 350px;
+    }
+    
+    @media(max-width:600px) {
+        body {
+            background: red;
+        }
+        .bottone {
+            width: 100%;
+        }
     }
