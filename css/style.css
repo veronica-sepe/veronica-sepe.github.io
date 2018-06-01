@@ -57,8 +57,7 @@
     }
     
     body {
-        background-image: url(../img/fungo.jpg)
-        
+        background-image: url(../img/blu.jpg)
     }
     
     ul,
@@ -71,4 +70,27 @@
         width: 30%;
         padding: 10px;
         border: 1px solid gray;
+    }
+    
+    .bottone {
+        border: 1px solid rgb(214, 74, 9);
+        background-color: #11e281;
+        color: rgb(253, 251, 255);
+        /* transition: background-color 5s; */
+        /* transition: all 4s ease-in-out; */
+        transition: all 2s ease-in-out;
+    }
+    
+    .bottone_large {
+        width: 300px;
+        font-size: 20px;
+        color: red;
+    }
+    /* quando il mause va sopra  */
+    
+    .bottone:hover {
+        background-color: #11dbe2;
+        color: rgb(226, 43, 43);
+        cursor: pointer;
+        width: 350px;
     }
