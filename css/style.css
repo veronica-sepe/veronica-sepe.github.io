@@ -1,0 +1,74 @@
+    * {
+        font-family: 'Kavivanar';
+        font-size: 16px;
+        box-sizing: border-box;
+        /* con questo le tre caselle mi occuperanno sempre il 30% anche se diminuisco la finestra */
+    }
+    
+    p {
+        text-decoration-color: black;
+    }
+    
+    img {
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+    }
+    
+    form {
+        border: 1px solid gray;
+        padding: 30px 20px;
+        border-radius: 30px;
+    }
+    
+    .formItem {
+        margin-bottom: 20px;
+    }
+    
+    form label {
+        width: 20%;
+        display: inline-block;
+        font-weight: 700;
+    }
+    
+    .formItem input,
+    .formItem select {
+        width: 70%;
+    }
+    
+    form label {
+        width: 100px;
+        display: inline-block;
+    }
+    
+    header {
+        margin-bottom: 40px;
+    }
+    
+    .box {
+        border-color: blue;
+        border-style: dotted;
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+        margin: auto;
+        border: 2px solid red;
+        border-top-color: springgreen;
+    }
+    
+    body {
+        background-image: url(../img/fungo.jpg)
+        
+    }
+    
+    ul,
+    li {
+        padding: 0;
+    }
+    
+    nav li {
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+        border: 1px solid gray;
+    }

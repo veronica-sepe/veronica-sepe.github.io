@@ -1,0 +1,66 @@
+    html,
+    body {}
+    
+    * {
+        font-family: 'Kavivanar'
+    }
+    
+    img {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+    }
+    
+    header,
+    footer {
+        border: 1px rgb(231, 10, 10) solid;
+        text-align: center;
+        height: 100px;
+        color: brown;
+        font-size: 2em;
+        background-color: yellow
+    }
+    
+    div {
+        text-align: center;
+        background-color: aqua;
+    }
+    
+    #content {
+        border: 2px dotted green;
+    }
+    
+    #sideMenu {
+        width: 30%;
+        text-align: left;
+        position: absolute;
+        right: 3px;
+    }
+    /**/
+    
+    #corpo {
+        width: 70%;
+        position: relative;
+    }
+    
+    .withBorder {
+        border: 1px solid gray;
+    }
+    
+    .titolo {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Kavivanar', cursive;
+    }
+    
+    h1.titolo {
+        font-size: 24px;
+        text-decoration: underline;
+    }
+    
+    #spesa>.item>img {
+        width: 300px;
+        height: auto;
+    }
