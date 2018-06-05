@@ -9,3 +9,16 @@ body {
 #myMenu .active .nav-link {
     cursor: default !important;
 }
+
+.box {
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.blu {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
