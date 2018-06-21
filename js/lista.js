@@ -1,7 +1,7 @@
 console.log("Pagina Lista")
     //oggetto Json= le proprietà(name,age,..) necessitano di apici
     // Javascript= le proprietà(name,age,..) NON necessitano di apici
-
+var SERVICE_URL = "http://jsonplaceholder.typicode.com/";
 var Person = {
     "name": "Pippo",
     "age": 24,
