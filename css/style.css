@@ -22,3 +22,13 @@ body {
 .orange {
     background-color: orange;
 }
+
+#emptyContenent {}
+
+.start #usersTable {
+    display: none;
+}
+
+.start #loadingBar {
+    display: none;
+}
