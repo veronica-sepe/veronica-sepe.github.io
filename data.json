@@ -1,0 +1,17 @@
+ {
+     "name": "Pippo",
+     "age": 24,
+     "children": [{
+             "name": "ginetto",
+             "age": 4,
+         },
+         {
+             "name": "pipino",
+             "age": 4
+         }
+     ],
+     "partner": {
+         "name": "Bilbo",
+         "age": 25,
+     }
+ }

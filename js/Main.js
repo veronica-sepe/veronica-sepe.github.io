@@ -1,7 +1,7 @@
-console.log("Start");
+//console.log("Start");
 
 jQuery(document).ready(function() {
-    console.log("ready")
+    //console.log("ready")
 
     jQuery("#btnCreateBox").on("click", createBox)
 
