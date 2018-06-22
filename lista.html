@@ -51,11 +51,22 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-md-4"> User List</div>
-                        <div class="col-md-8 input-group mb-3">
+                        <select id="searchLimit" class="form-control">
+                            <option value="5">5 risultati</option>
+                            <option value="10">10 risultati</option>
+                            <option value="15">15 risultati</option>
+                            <option value="20">20 risultati</option>
+                            <option value="25">25 risultati</option>
+                        </select>
 
-                            <input id="searchInput" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input id="searchInput" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div id="searchInput" class="input-group-append">
+                            <button id="searchBtn" class="btn btn-outline-secondary" type="button">Cerca</button>
+
+                            <input id="number" type="number" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div id="searchInput" class="input-group-append">
-                                <button id="searchBtn" class="btn btn-outline-secondary" type="button">Cerca</button>
+                                <button id="searchBtn" class="btn btn-outline-secondary" type="button">Cerca Numero</button>
+
                             </div>
                         </div>
                     </div>

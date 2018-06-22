@@ -3,7 +3,7 @@ console.log("Pagina Lista")
     // Javascript= le proprietà(name,age,..) NON necessitano di apici
 var SERVICE_URL = "http://jsonplaceholder.typicode.com";
 var API_KEY = "AIzaSyADsJpLGHyv3kKZVCJQQ3BLjLscAl_Jjs0";
-var YOUTUBE_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&key=" + API_KEY + "&q=";
+var YOUTUBE_URL = "https://www.googleapis.com/youtube/v3/search";
 jQuery(document).ready(function($) {
         //La pagina è completamente carica e jQuery è pronto!
         //jQuery == $
@@ -19,6 +19,8 @@ jQuery(document).ready(function($) {
                 console.log("Click");
                 // getUsers();
                 var search = $("#searchInput").val();
+                var maxResults = $("#searchLimit").val();
+
                 getVideos(search);
             })
 
@@ -36,18 +38,25 @@ jQuery(document).ready(function($) {
             })
         }
 
-        function getVideos(search) {
+        function getVideos(search, maxResults) {
 
             $("#loadingBar").fadeIn(); //mostro il caricamento
             $("#emptyContent").fadeOut(); //tolto il contenuto iniziale vuoto
 
 
             console.log("chiamo getVideos");
-            $.getJSON(YOUTUBE_URL + search, function(response) {
-                var videos = response.items;
-                console.log("VIDEOS", videos);
-                fillTable(videos);
-            })
+            $.getJSON(YOUTUBE_URL, {
+                    "part": "snippet",
+                    "key": API_KEY,
+                    "maxResults": maxResults || 5,
+                    "q": search
+                },
+
+                function(response) {
+                    var videos = response.items;
+                    console.log("VIDEOS", videos);
+                    fillTable(videos);
+                })
         }
 
         function fillTable(arrayData) {

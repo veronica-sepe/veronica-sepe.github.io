@@ -1,13 +1,13 @@
 body {
-    padding-bottom: 40px;
-}
-
-#myMenu {
     margin-bottom: 40px;
 }
 
-#myMenu .active .nav-link {
-    cursor: default !important;
+#mainMenu {
+    margin-bottom: 40px;
+}
+
+#mainMenu .active .nav-link {
+    cursor: default;
 }
 
 .box {
@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-.blu {
+.blue {
     background-color: blue;
 }
 
@@ -23,26 +23,46 @@ body {
     background-color: orange;
 }
 
+#emptyContent {}
 
-/* #emptyContent {} */
-
-.start #usersTable {
+#loadingBar {
     display: none;
 }
 
-.start #loadingBar {
+#usersTable {
     display: none;
+}
+
+#usersTable tr {
+    transition: all .2s ease-in-out;
+}
+
+#usersTable tr:hover {
+    cursor: pointer;
+    background-color: rgb(238, 203, 0);
+}
+
+#usersTable tr img {
+    height: 100px;
+    opacity: .5;
+    transition: all .2s ease-in-out;
+}
+
+#usersTable tr:hover img {
+    height: 200px;
 }
 
 input::placeholder {
-    color: red!important;
+    color: red !important;
 }
 
+input:hover {}
 
-/* input:hover{} */
+#searchRow {
+    width: 50%;
+    transition: all .5s ease-in-out;
+}
 
-.inputFocus {
-    color: green;
-    background: rgb(165, 159, 165);
-    border: 5px solid #27a527;
+#searchRow.full {
+    width: 100%;
 }
