@@ -34,6 +34,13 @@ body {
     display: none;
 }
 
+input::placeholder {
+    color: red!important;
+}
+
+
+/* input:hover{} */
+
 .inputFocus {
     color: green;
     background: rgb(165, 159, 165);
