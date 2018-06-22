@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 
 
         $("#searchBtn")
-            .click(function() {
+            .click(function(event) {
                 console.log("Click");
                 // getUsers();
                 var search = $("#searchInput").val();
@@ -55,6 +55,7 @@ jQuery(document).ready(function($) {
             var $tableBody = $("#usersTable tbody")
 
             $tableBody.html(""); //ripulisco il contenuto del tbody
+            //$tableBody.empty("");
 
             $.each(arrayData, function(index, video) {
                     console.log(index, video);
@@ -80,11 +81,25 @@ jQuery(document).ready(function($) {
                     $("#loadingBar").fadeOut(); // faccio scomparire il loading
                     $("#usersTable").fadeIn(); // mostro la tabella
                 },
-                2 * 1000 //tempo in millisendi;
+                0 * 1000 //tempo in millisendi;
             )
 
         }
-
+        // Eventi del campo di input di ricerca
+        $("#searchInput").keypress(function() {
+                console.log("tasto premuto", event.key, event.keyCode)
+                    //se ho premuto enter keyCode=13
+                if (event.keyCode === 13) {
+                    var search = $(this).val();
+                    getVideos(search);
+                }
+            }).focus(function() {
+                $(this).addClass("inputFocus")
+                console.log("Focus")
+            })
+            .blur(function() {
+                $(this).removeClass("inputFocus")
+            })
 
 
 

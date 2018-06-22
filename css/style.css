@@ -23,7 +23,8 @@ body {
     background-color: orange;
 }
 
-#emptyContent {}
+
+/* #emptyContent {} */
 
 .start #usersTable {
     display: none;
@@ -31,4 +32,10 @@ body {
 
 .start #loadingBar {
     display: none;
+}
+
+.inputFocus {
+    color: green;
+    background: rgb(165, 159, 165);
+    border: 5px solid #27a527;
 }
