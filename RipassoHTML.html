@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript" src="alertme.js"></script>
+    <style>
+        h2 {
+            color: rgb(4, 24, 114);
+        }
+        
+        .classecolor {
+            color: rgb(6, 125, 146);
+        }
+        
+        #idcolor {
+            color: rgba(99, 100, 2, 0.986);
+        }
+        
+        input[type="text"] {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Paragrafo</p>
+    <h1>Titolo principale H1</h1>
+    <h2>Titolo H2</h2>
+    <h3 class="classecolor">Titolo H3</h3>
+    <h4 id="idcolor">Titolo H4</h4>
+    <h5>Titolo H5</h5>
+    <h6>Titolo H6</h6>
+    <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.Strong</strong>
+    <hr>
+    <em>Lorem ipsum dolor sit amet consectetur adipisicing elit.Em</em>
+    <hr>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.B</b>
+    <hr>
+    <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.I</i>
+    <hr>
+    <ul>
+        <li>Primo</li>
+        <li>Secondo</li>
+        <li>Terzo</li>
+    </ul>
+    <ol>
+        <li>Primo</li>
+        <li>Secondo</li>
+        <li>Terzo</li>
+    </ol>
+    <dl>
+        <dt>non so che fa DT</dt>
+        <dd>e nn so il perchè DD</dd>
+        <dd>e nn so il perchè DD</dd>
+        <dt>non so che fa DT</dt>
+        <dd>e nn so il perchè DD</dd>
+        <dd>e nn so il perchè DD</dd>
+    </dl>
+    <hr>
+    <img src="img/vino.jpg" alt="Vino" longdesc="Bottiglie di vino">
+    <hr>
+    <a href="https://www.google.it/" target="_self">Google</a>
+    <a href="https://translate.google.com/?hl=it">TRADUTTORE</a>
+    <hr> FORM
+    <form action="">
+        text
+        <input type="text" rel="text"> password
+        <input type="password" rel="password">
+        <hr> hidden
+        <input type="hidden"> checkbox
+        <input type="checkbox" selected="">
+        <input type="checkbox">
+        <input type="checkbox">
+        <hr> radio
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <hr>
+        <input type="reset">
+        <hr> submit si processano i valori
+        <input type="submit">
+        <hr> Image
+        <input type="image" src="">
+        <hr> bottone
+        <input type="button">
+        <hr> file
+        <input type="file">
+    </form>
+    <br>
+    <hr> Fai la tua scelta
+    <select name="Fai la tua scelta" id="">
+        <option value="vivere">vivere</option>
+        <option value="morire">morire</option>
+        <option value="credere">credere</option>
+    </select>
+    <br>
+    <hr>
+    <form method="Post" action="support.aspx">
+        fieldset
+        <fieldset>
+            legend
+            <legend>
+                Your Detail and enquiry/Il tuo dettaglio e richiesta
+            </legend>
+            <ol>
+                <li>
+                    Label
+                    <label for="">
+                        <strong>Nome</strong><br>
+                        <input type="text" name="UserName">
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        Telephone <br>
+                        <input type="text"name="Phone">
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        Email Address <br>
+                        <input type="text"name="Email">
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        <strong>Message</strong> <br>
+                        <textarea name="Message"cols="30" rows="10">Add your message here</textarea>
+                    </label>
+                </li>
+            </ol>
+        </fieldset>
+        <input type="submit" value="Send">
+    </form>
+</body>
+
+</html>
